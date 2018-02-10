@@ -6,7 +6,7 @@
 //  Store user input in ```var city``` 
 
 // | Store user input in ```var city```  
-                                                                                                                                                                        |
+
 // Use $.on(submit) or ```$.click``` to figure out when the user clicks the "submit" button 
                                                                                                                       
 //Create ```if / else if / else``` conditionals to control the flow of your application           
@@ -39,9 +39,10 @@ $(document).ready(function() {
 //Get the first element from an attribute name using ```$.attr()```
 $( "img" ).attr({
 	src="/images/nyc.jpg",
-  title: "jQuery",
-  alt: "jQuery Logo"
+  title: "city photo",
+  alt: "photo of _"
 });
+//or --> which is correct?
 $( "div" ).text( $( "img" ).attr( "alt" ) ); 
 
 // | Store user input in ```var city```  
@@ -63,22 +64,59 @@ $( "div" ).text( $( "img" ).attr( "alt" ) );
 
 	function 
 
+	
 	// $("p").css("background-image" url("")); -->make sure you go up and back down the directory so it pulls the image
 
-	if city === "New York" or city === "New York City" or city = "NYC"
-		$("img").css("background-image: url("/images/nyc.jpg"));
 
-	if city === "San Fransisco" or city === "SF" or city = "Bay Area"
-		$("img").css("background-image: url("/images/sf.jpg"));
+	// | Use $.on(submit) or ```$.click``` to figure out when the user clicks the "submit" button   
+	$("#submit-btn").click(function() { 
+		$("cityNewYork").css("background-image" url("../images/nyc.jpg"));
+		// $("citySanFran").css('background-image url("../images/sf.jpg")');
+		// $("cityLosAng").css('background-image url("../images/la.jpg")');
+		// $("cityAustin").css('background-image url("../images/austin.jpg")');
+		// $("citySydney").css('background-image url("../images/sydney.jpg")');
+	// });
 
-	if city === "Los Angeles" or city === "LA" or city = "LAX"
-		$("img").css("background-image: url("/images/la.jpg"));
+	});
 
-	if city === "Austin" or city === "ATX" 
-		$("img").css("background-image: url("/images/austin.jpg"));
+	// $("#submit-btn").click(function() { 
+	// 	$("cityNewYork").css('background-image: "url(../images/nyc.jpg)');
+	// });
 
-	if city === "Sydney" or city === "SYD" 
-		$("img").css("background-image: url("/images/sydney.jpg"));
+	// $("#submit-btn").click(function() { 
+	// 	$("cityNewYork").css('background-image: "url(../images/nyc.jpg)');
+	// });
+
+	// $("#submit-btn").click(function() { 
+	// 	$("cityNewYork").css('background-image: "url(../images/nyc.jpg)');
+	// });
+
+	// $("#submit-btn").click(function() { 
+	// 	$("cityNewYork").css('background-image: "url(../images/nyc.jpg)');
+	// });
+
+
+
+
+
+	
+
+	// if city === "New York" or city === "New York City" or city = "NYC"
+	// 	$("img").css("background-image: url("../images/nyc.jpg"));
+
+	// if city === "San Fransisco" or city === "SF" or city = "Bay Area"
+	// 	$("img").css("background-image: url("../images/sf.jpg"));
+
+	// if city === "Los Angeles" or city === "LA" or city = "LAX"
+	// 	$("img").css("background-image: url("../images/la.jpg"));
+
+	// if city === "Austin" or city === "ATX" 
+	// 	$("img").css("background-image: url("../images/austin.jpg"));
+
+	// if city === "Sydney" or city === "SYD" 
+	// 	$("img").css("background-image: url("../images/sydney.jpg"));
+
+
 
 	//Pseudocode
 	// User clicks submit ->
@@ -88,6 +126,12 @@ $( "div" ).text( $( "img" ).attr( "alt" ) );
 	//  Something from citySanFran -> set the BG to sf.jpg
 	//  Something from cityAustin -> set the BG to austin.jpg
 	//	Something from citySydnet -> set the BG to sydney.jpg
+
+	
+
+	//BROOKE NOTES
+	//My Notes on Other Possible Methods I found in my research.
+
 
 	// $("p").css("background-color");
 
@@ -111,10 +155,6 @@ $( "div" ).text( $( "img" ).attr( "alt" ) );
 	// $( "Update" ).click(function() { 
 	// 	$("citySydney").css('background': 'url(/images/sydney.jpg)');
 	// });
-
-
-});
-
 
 // | Store user input in ```var city```  
 			// var cityNewYork = ["New York", "New York City", "NYC"];
