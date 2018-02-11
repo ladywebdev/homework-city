@@ -100,10 +100,6 @@ $( "div" ).text( $( "img" ).attr( "alt" ) );
 
 
 
-
-
-	
-
 	// if city === "New York" or city === "New York City" or city = "NYC"
 	// 	$("img").css("background-image: url("../images/nyc.jpg"));
 
